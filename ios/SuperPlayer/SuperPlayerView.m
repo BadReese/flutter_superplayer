@@ -1204,7 +1204,7 @@ static UISlider * _volumeSlider;
                      shiftPlayback:self.isShiftPlayback
                          isPlaying:self.autoPlay];
     [controlView setTitle:_controlView.title];
-    // [controlView.backBtn setHidden:YES];
+    [controlView setDisableBackBtn:YES];
     [controlView setPointArray:_controlView.pointArray];
 }
 
