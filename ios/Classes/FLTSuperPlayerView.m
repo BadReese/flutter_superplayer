@@ -155,7 +155,7 @@
         if (fileId)
             [videoId setFileId:fileId];
         if (pSign) {
-            [videoId psign] = pSign;
+            [videoId Psign] = pSign;
         }
         [model setVideoId:videoId];
     }
