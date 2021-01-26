@@ -174,6 +174,11 @@ static UISlider * _volumeSlider;
     self.reportTime = [NSDate date];
     [self _removeOldPlayer];
     [self _playWithModel:playerModel];
+
+    // 隐藏返回按钮
+    SPDefaultControlView* defaultControllView = (SPDefaultControlView*) self.controlView;
+    defaultControllView.disableBackBtn = true;
+    
     self.coverImageView.alpha = 1;
     self.maskView.hidden = YES;
     self.repeatBtn.hidden = YES;

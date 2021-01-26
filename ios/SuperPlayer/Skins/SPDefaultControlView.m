@@ -379,7 +379,7 @@
     self.fullScreen             = NO;
     self.lockBtn.hidden         = YES;
     self.fullScreenBtn.selected = NO;
-    self.fullScreenBtn.hidden   = NO;
+    self.fullScreenBtn.hidden   = YES;
     self.resolutionBtn.hidden   = YES;
     self.moreBtn.hidden         = YES;
     self.captureBtn.hidden      = YES;
