@@ -84,7 +84,7 @@
     
     [self.superPlayer.controlView fadeOut:0.01];
     
-    // [_rootView bringSubviewToFront:_backBtn];
+    [_rootView bringSubviewToFront:_backBtn];
     [_rootView bringSubviewToFront:_closeBtn];
     
     _closeBtn.m_width(42).m_height(42).m_top(0).m_right(0);
