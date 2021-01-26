@@ -149,11 +149,14 @@
     NSDictionary *videoIdJson = call.arguments[@"videoId"];
     if (videoIdJson) {
         NSString *fileId = videoIdJson[@"fileId"];
+        NSString *pSign = videoIdJson[@"pSign"];
         
         SuperPlayerVideoId *videoId = [[SuperPlayerVideoId alloc] init];
         if (fileId)
             [videoId setFileId:fileId];
-        
+        if (pSign) {
+            [videoId setPSign:pSign];
+        }
         [model setVideoId:videoId];
     }
     
