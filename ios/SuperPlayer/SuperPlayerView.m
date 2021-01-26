@@ -1211,6 +1211,7 @@ static UISlider * _volumeSlider;
 {
     if (_controlView == nil) {
         self.controlView = [[SPDefaultControlView alloc] initWithFrame:CGRectZero];
+        [self.controlView.backBtn setHidden:YES];
     }
     return _controlView;
 }
