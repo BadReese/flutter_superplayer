@@ -109,7 +109,8 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_gravity="center_vertical"
-            android:visibility="gone"
+            android:clickable="false"
+            android:visibility="invisible"
             android:src="@drawable/superplayer_ic_vod_fullscreen" />
     </LinearLayout>
 
